@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 import { useSelector } from "react-redux";
 
@@ -11,7 +12,7 @@ export default function Navbar() {
         {/* Logo and Company Name */}
         <div className="flex items-center">
           <img src="logo.png" alt="Company Logo" className="w-8 h-8 mr-2" />
-          <span className="text-xl">Company Name</span>
+          <Link href="/"> Arbit Blog </Link>
         </div>
 
         {/* Posts Count */}
