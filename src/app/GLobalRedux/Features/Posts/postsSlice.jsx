@@ -16,7 +16,6 @@ export const postsSlice = createSlice({
         state[index] = action.payload;
       }
     },
-    // add more CRUD operations as needed
   },
 });
 

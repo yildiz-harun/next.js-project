@@ -2,17 +2,26 @@
 import Link from "next/link";
 import React from "react";
 import { useSelector } from "react-redux";
+import { ImBlogger } from "react-icons/im";
 
 export default function Navbar() {
   const posts = useSelector((state) => state.posts || []);
 
   return (
-    <nav className="bg-blue-500 p-4 text-white">
+    <nav className="bg-white p-3 text-black">
       <div className="container mx-auto flex items-center justify-between">
-        {/* Logo and Company Name */}
         <div className="flex items-center">
-          <img src="logo.png" alt="Company Logo" className="w-8 h-8 mr-2" />
-          <Link href="/"> Arbit Blog </Link>
+          {/* Logo  */}
+          <div className="rounded-full bg-primary p-3 inline-flex mr-2">
+            <ImBlogger className="text-white text-2xl" />
+          </div>
+          {/* Company Name */}
+          <Link
+            className="text-2xl font-semibold text-black hover:text-primary"
+            href="/"
+          >
+            Arbit Blog
+          </Link>
         </div>
 
         {/* Posts Count */}
