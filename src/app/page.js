@@ -1,11 +1,4 @@
-"use client";
-import Link from "next/link";
-import React from "react";
-
-export default function Home() {
-  return (
-    <div>
-      <Link href="/posts">Posts</Link>
-    </div>
-  );
+import { redirect } from 'next/navigation';
+export default async function Home() {
+    redirect('/posts');
 }
