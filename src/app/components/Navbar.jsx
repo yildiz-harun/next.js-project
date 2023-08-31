@@ -31,8 +31,8 @@ export default function Navbar() {
         <div className="flex items-center relative">
           <div className="mx-2 relative">
             <span className="text-gray-500 font-bold text-xl">Posts</span>
-            <span className="absolute -top-4 -right-1 bg-red-500 text-white rounded-full text-sm px-1">
-              10
+            <span className="flex items-center justify-center w-6 h-6 absolute -top-5 -right-1 bg-red-500 text-white rounded-full text-sm px-1">
+              {posts.length}
             </span>
           </div>
           <GoBellFill className="text-gray-500 text-2xl mx-2" />
